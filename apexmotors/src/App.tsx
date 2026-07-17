@@ -37,7 +37,7 @@ function App() {
     return () => clearInterval(id)
   }, [])
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault()
     setSubscribed(true)
   }
